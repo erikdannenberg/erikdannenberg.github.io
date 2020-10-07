@@ -44,14 +44,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10">
+                <h1>Packets, Routing and Reliability</h1>
+                <p> Data does not travel through the Internet as a direct connection. It travels in a less direct
+                    fashion. Information on the Internet goes from one computer to another in something that is called
+                    a packet. A packet travels similarly to how we might drive from one location to another. You are
+                    able to send many kinds of information using these packets, however there is a limit. If something
+                    is too big to send, it needs to be broken down into smaller packets and then “reconstructed” when
+                    it gets to its final destination. Each packet is sent out with the Internet address of where is it
+                    coming from and where it is going. Routers are used to make sure packets travel smoothly. When
+                    packets of information are traveling, the most direct route is normally not the fastest. Computer
+                    look for the “cheapest” route, or the most time effective to get packets where they need to be.</p>
 
+                <p> With having different routes packets can take to get to a destination, this makes the network fault
+                    tolerant. This means the network can continue to send packets even if something goes wrong.
+                    This goes hand in hand with a key principle of the Internet known as reliability. </p>
 
+                <p> Now how do you know that all of the information you are trying to get is going to be delivered?
+                    Transmission Control Protocol, or TCP, manages the sending and receiving of all data as packets.
+                    When packets arrive to your computer from a sender, TCP makes sure all of the packets were
+                    delivered. If TCP notices something is missing, it will not “sign” for the packets and the sender
+                    will have to resend what is missing.</p>
 
             </div>
         </div>
     </div>
 </main>
 
+<img src="photos/tcp_ip.jpg" class="center" alt="TCP IP Image">
 
 <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script crossorigin="anonymous" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
